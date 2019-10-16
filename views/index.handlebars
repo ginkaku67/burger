@@ -4,9 +4,9 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
+  {{#unless devoured}}
+  <li data-bid={{id}}>{{burger_name}}</li>
+  {{/unless}}
   {{/each}}
 </ul>
 
@@ -14,9 +14,9 @@
 
 <ul>
   {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
+  {{#if devoured}}
+  <li>{{burger_name}}</li>
+  {{/if}}
   {{/each}}
 </ul>
 
@@ -27,5 +27,5 @@
     <label for="ca">Name Your Burger:</label>
     <input type="text" id="ca" name="burger_name">
   </div>
-  <button type="submit">Add burger/</button>
+  <button type="submit">Add burger</button>
 </form>
