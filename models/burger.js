@@ -1,5 +1,5 @@
 var orm = require("../config/orm.js");
-//var mysql = require("mysql");
+//var mysql = require("mysql");// WHAT 
 var burgers = {
   selectAll: function (cb) {
     orm.selectAll("burgers", function (res) {
