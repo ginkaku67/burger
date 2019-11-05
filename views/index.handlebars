@@ -3,6 +3,7 @@
 </div>
 <h1 style="font-family: cursive; font-size:50px; text-align: center; color: #FFB235;">Super Awesome Burger Task Manager</h1>
 
+<div id="body" style="margin-right: 25%; margin-left: 25%; background-color:red;">
 <div style="text-align: center;">
   <h2 style="color:#FFB235;">Unfulfilled Goals</h2>
     <p class="kindaSad" style="font-size: 8px;" style="color:#FFB235;">you should be used to reading that</p>
@@ -11,10 +12,10 @@
    {{#each burgers}}
     {{#unless devoured}}
   
-    <li style="list-style-image: url('/public/assets/img/burger-app.png')" data-bid={{id}}>
+    <li data-bid={{id}}>
       {{burger_name}}
   
-      <form action="api/burgers/{{id}}?_method=PUT" method="POST" class="devour-it">
+      <form action="api/burgers/{{id}}?_method=PUT" method="PUT" class="devour-it">
         <button type="submit">Fill the Void!</button>
       </form>
     </li>
@@ -55,4 +56,5 @@
     </div>
     <button type="submit">Add Burger</button>
   </form>
+</div>
 </div>

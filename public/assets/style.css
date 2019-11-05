@@ -10,4 +10,11 @@ h2 {
 };
 ul {
     font-family: cursive;
-}
+};
+#ficult_image_div {
+    size: 500px;
+};
+#body {
+    margin-right: 25%;
+    margin-left: 25%;
+};
